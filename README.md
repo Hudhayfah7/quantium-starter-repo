@@ -7,16 +7,15 @@ It includes environment setup, data processing, and output preparation required 
 
 ## 📌 Project Overview
 
-Soul Foods, a Quantium client, wants to understand whether **Pink Morsel** sales increased or decreased after a price change on **15 January 2021**.
+This project completes the full Quantium data analytics workflow: transforming raw sales data, generating business insights, building an interactive Dash dashboard, applying custom UI styling, and validating the app through automated UI testing.
 
-To answer this, transaction-level sales data was provided across three CSV files.  
-My objective for this stage was to:
-
-✔ load and explore the datasets  
-✔ clean and transform them  
-✔ isolate Pink Morsel sales  
-✔ generate a new formatted output dataset suitable for analysis  
-
+It demonstrates practical capabilities in:
+	•	Python (Pandas, Dash, Plotly)
+	•	Data cleaning & preprocessing
+	•	Interactive dashboard development
+	•	UI/UX styling
+	•	Automated testing (pytest + Selenium)
+	•	Git & GitHub project management
 ---
 
 ## 📂 Repository Structure
