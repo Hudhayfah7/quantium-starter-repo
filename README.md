@@ -146,5 +146,6 @@ Sales were higher before the price increase on 15 January 2021.
 After the change, revenue trends decline, suggesting the higher price negatively impacted demand.
 
 
+<img width="801" height="141" alt="image" src="https://github.com/user-attachments/assets/4fb30968-e0dc-4f3f-85db-5f1410144574" />
 
 
