@@ -10,13 +10,13 @@ It includes environment setup, data processing, and output preparation required 
 This project completes the full Quantium data analytics workflow: transforming raw sales data, generating business insights, building an interactive Dash dashboard, applying custom UI styling, and validating the app through automated UI testing.
 
 It demonstrates practical capabilities in:
-	•	Python (Pandas, Dash, Plotly)
-	•	Data cleaning & preprocessing
-	•	Interactive dashboard development
-	•	UI/UX styling
-	•	Automated testing (pytest + Selenium)
-	•	Git & GitHub project management
----
+	-Python (Pandas, Dash, Plotly)
+	-Data cleaning & preprocessing
+	-Interactive dashboard development
+	-UI/UX styling
+	-Automated testing (pytest + Selenium)
+	-Git & GitHub project management
+
 
 ## 📂 Repository Structure
 
