@@ -101,6 +101,49 @@ This script:
 - Calculates transaction sales
 - Outputs a clean dataset
 
+## 8. Pink Morsel Sales Visualiser — Dash Application
+
+The goal was to help Soul Foods answer a key commercial question:
+
+“Were sales higher before or after the Pink Morsel price increase on 15 January 2021?”
+
+⸻
+
+🎯 Objectives of This Task
+
+✔ Load and visualise the cleaned dataset generated in Task 1
+✔ Build an interactive time-series plot using Plotly Dash
+✔ Display trends clearly enough that the answer is visually obvious
+✔ Style the interface so it is professional, readable, and business-friendly
+
+⸻
+
+🛠 Tools & Libraries Used
+	•	Dash (web framework)
+	•	Plotly Express (graphing & visualisation)
+	•	Pandas (data manipulation)
+	•	Flask (embedded within Dash)
+
+⸻
+
+🔧 How the Application Works
+	1.	pink_morsel_sales.csv is loaded from the processed/ directory
+	2.	Sales are grouped per date and sorted chronologically
+	3.	A line chart is displayed showing revenue progression
+	4.	A vertical marker on 15 January 2021 highlights the price change
+	5.	Before/after periods are visually shaded for comparison
+	6.	Hover tooltips show exact sales values for each date
+	7.	A styled page layout makes the insight clear and accessible
+
+  ✔ Hosted locally via Dash web server at
+➡ http://127.0.0.1:8050/
+
+Insight Delivered
+
+From the visualisation:
+
+Sales were higher before the price increase on 15 January 2021.
+After the change, revenue trends decline, suggesting the higher price negatively impacted demand.
 
 
 
