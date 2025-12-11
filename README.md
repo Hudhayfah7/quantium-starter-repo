@@ -145,7 +145,30 @@ From the visualisation:
 Sales were higher before the price increase on 15 January 2021.
 After the change, revenue trends decline, suggesting the higher price negatively impacted demand.
 
+## 🎨 9. UI Styling & Layout Enhancements
 
+To make the visualiser more visually appealing and user-friendly, a custom UI design was added:
+
+✨ Styling Improvements
+	•	Soft beige background to create warmth
+	•	Deep red highlight elements for visual consistency
+	•	Card-style containers for the header and chart
+	•	Cleaner typography for improved readability
+	•	Better spacing & padding across elements
+
+These changes create a modern, BI-style interface comparable to Tableau or PowerBI dashboards.
+
+## 🧪 10. Automated UI Testing (Pytest + Selenium)
+
+A UI test suite validates that core dashboard elements render correctly.
+
+✔ Tests Implemented
+Test Purpose  
+test_header_present - Confirms dashboard header renders
+test_visualisation_present - Confirms line chart loads
+test_region_picker_present - Confirms region filter is visible
+
+Results can be seen below:
 <img width="801" height="141" alt="image" src="https://github.com/user-attachments/assets/4fb30968-e0dc-4f3f-85db-5f1410144574" />
 
 
