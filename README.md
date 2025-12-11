@@ -171,4 +171,37 @@ test_region_picker_present - Confirms region filter is visible
 Results can be seen below:
 <img width="801" height="141" alt="image" src="https://github.com/user-attachments/assets/4fb30968-e0dc-4f3f-85db-5f1410144574" />
 
+---
+
+## 🔁 11. Continuous Integration – Automated Test Runner
+
+To support Continuous Integration (CI), this project includes a small Bash script that a CI engine (such as GitHub Actions, Jenkins, or GitLab CI) can run to automatically execute the test suite.
+
+### `run_tests.sh`
+
+```bash
+#!/bin/bash
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Run test suite
+pytest -v
+TEST_RESULT=$?
+
+# Exit 0 if tests pass, 1 otherwise
+if [ $TEST_RESULT -eq 0 ]; then
+    echo "All tests passed! 🎉"
+    exit 0
+else
+    echo "Some tests failed. ❌"
+    exit 1
+fi
+
+The following script:
+	1.	Activates the local venv virtual environment
+	2.	Runs the full pytest suite
+	3.	Returns exit code 0 on success or 1 on failure, so a CI server can mark the build as pass/fail.
+
+
 
