@@ -101,7 +101,7 @@ This script:
 - Calculates transaction sales
 - Outputs a clean dataset
 
-## 8. Pink Morsel Sales Visualiser — Dash Application
+# 8. Pink Morsel Sales Visualiser — Dash Application
 
 The goal was to help Soul Foods answer a key commercial question:
 
@@ -109,7 +109,7 @@ The goal was to help Soul Foods answer a key commercial question:
 
 ⸻
 
-🎯 Objectives of This Task
+## 🎯 Objectives of This Task
 
 ✔ Load and visualise the cleaned dataset generated in Task 1
 ✔ Build an interactive time-series plot using Plotly Dash
@@ -118,7 +118,7 @@ The goal was to help Soul Foods answer a key commercial question:
 
 ⸻
 
-🛠 Tools & Libraries Used
+## 🛠 Tools & Libraries Used
 	•	Dash (web framework)
 	•	Plotly Express (graphing & visualisation)
 	•	Pandas (data manipulation)
@@ -126,7 +126,7 @@ The goal was to help Soul Foods answer a key commercial question:
 
 ⸻
 
-🔧 How the Application Works
+## 🔧 How the Application Works
 	1.	pink_morsel_sales.csv is loaded from the processed/ directory
 	2.	Sales are grouped per date and sorted chronologically
 	3.	A line chart is displayed showing revenue progression
@@ -179,17 +179,17 @@ To support Continuous Integration (CI), this project includes a small Bash scrip
 
 ### `run_tests.sh`
 
-```bash
+``bash
 #!/bin/bash
 
-# Activate virtual environment
+### Activate virtual environment
 source venv/bin/activate
 
-# Run test suite
+### Run test suite
 pytest -v
 TEST_RESULT=$?
 
-# Exit 0 if tests pass, 1 otherwise
+### Exit 0 if tests pass, 1 otherwise
 if [ $TEST_RESULT -eq 0 ]; then
     echo "All tests passed! 🎉"
     exit 0
@@ -203,5 +203,51 @@ The following script:
 	2.	Runs the full pytest suite
 	3.	Returns exit code 0 on success or 1 on failure, so a CI server can mark the build as pass/fail.
 
+## 🚀 Continuous Integration (CI) Pipeline
+
+This project now includes a fully automated Continuous Integration (CI) pipeline powered by GitHub Actions.
+The CI workflow ensures that every update pushed to the main branch is automatically tested in a clean environment, guaranteeing code quality and stability.
+
+⸻
+
+### ✅ What the CI Pipeline Does
+
+Every time a commit is pushed or a pull request is opened:
+	1.	A fresh Python environment is created
+	2.	Project dependencies are installed
+	3.	Chrome & ChromeDriver are installed
+	4.	The Dash test suite is executed using Pytest
+	5.	The workflow:
+	•	Passes if all tests succeed
+	•	Fails if any test fails, blocking bad code from entering main
+
+This creates a professional development experience similar to real-world engineering workflows.
+
+⸻
+
+### 📁 CI Workflow File
+
+The pipeline is defined in:
+.github/workflows/ci.yml
+
+### 🎯 Why CI Matters
+
+Implementing CI provides:
+	•	Automatic detection of issues before merging
+	•	Confidence that your Dash application works across environments
+	•	Faster development cycles
+	•	Production-level reliability
+
+This pipeline mirrors real industry practices and prepares the project for potential scaling or deployment.
+
+# 🎉 Final Outcome
+
+By the end of the project, I built a fully working, automated analytics and visualisation pipeline:
+
+✔ Clean data processing workflow
+✔ Interactive Dash dashboard
+✔ Automated UI test suite
+✔ CI/CD pipeline via GitHub Actions
+✔ Fully documented GitHub repository
 
 
